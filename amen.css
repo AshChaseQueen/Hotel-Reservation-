@@ -1,0 +1,80 @@
+ body {
+      background-color: #ffecb3;
+      margin: 0;
+      padding: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-size: 35px;
+      color: #760a0a;
+      text-align: center;
+      text-decoration: underline;
+      padding: 15px 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      width: fit-content;
+      margin: 0 auto 20px auto;
+    }
+
+    p {
+      background-color: aliceblue;
+      border-radius: 10px;
+      padding: 15px 25px;
+      margin: 10px auto;
+      width: 80%;
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: center;
+      box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px 0;
+}
+
+.grid-item {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  aspect-ratio: 1 / 1; /* Keep square shape */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cover keeps image filling the square without distortion */
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+.grid-item h3 {
+  margin: 2px 0;
+  color: #760a0a;
+}
+.header {
+  background-image: url('high.webp'); /* Replace 'header.jpg' with your actual image file name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
